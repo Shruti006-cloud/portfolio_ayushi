@@ -186,15 +186,16 @@
                     <p>India</p>
                 </div>
 
-                <form>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="37d5f0ad-afba-4447-a69b-bfc92401f9a6">
                     <div class="input-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="input-group">
-                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn submit-btn">Send Message</button>
                 </form>
